@@ -42,8 +42,7 @@
   z-index: 50;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding: 80px clamp(28px, 8vw, 140px);
+  padding: 14px clamp(28px, 8vw, 140px) 40px;
   background: var(--bg);
   opacity: 0;
   visibility: hidden;
@@ -58,20 +57,20 @@
   visibility: visible;
 }
 
+/* In the flow (not absolute) so the links can never slide underneath it. */
 .brand {
-  position: absolute;
-  top: 14px;
-  left: clamp(28px, 8vw, 140px);
+  flex: none;
   font-family: var(--font-signature), cursive;
   font-size: 56px;
   color: var(--crimson);
   line-height: 1.2;
 }
 
+/* Auto margins centre the list in the free space, and it scrolls when there is none. */
 .links {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: auto 0;
 }
 
 .links li {

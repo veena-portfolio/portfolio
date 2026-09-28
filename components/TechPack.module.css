@@ -69,6 +69,11 @@
   margin-top: 28px;
 }
 
+.group > p {
+  text-align: justify;
+  hyphens: auto;
+}
+
 .bullets {
   padding-left: 22px;
 }
@@ -163,6 +168,11 @@
 
   .group {
     margin: 0;
+  }
+
+  .group > p {
+    text-align: left;
+    hyphens: manual;
   }
 
   .bullets {

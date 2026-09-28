@@ -18,6 +18,8 @@
   max-width: 36em;
   margin: 12px 0 28px;
   color: var(--accent);
+  text-align: justify;
+  hyphens: auto;
 }
 
 .art {
@@ -50,6 +52,7 @@
     font-size: calc(14 * var(--pt));
     line-height: calc(16.5 * var(--pt));
     text-align: center;
+    hyphens: manual;
   }
 
   .sketches .flourish,
