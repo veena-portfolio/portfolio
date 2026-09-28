@@ -1,0 +1,7 @@
+node_modules/
+.next/
+out/
+*.log
+.DS_Store
+# The source PDF stays out of the repo; its artwork is in public/images.
+*.pdf
