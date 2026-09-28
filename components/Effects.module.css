@@ -1,0 +1,55 @@
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: grid;
+  place-items: center;
+  padding: 56px 12px 12px;
+  background: rgb(250 249 245 / 0.97);
+  overflow: auto;
+  animation: fade 0.25s ease;
+  cursor: zoom-out;
+}
+
+.lightbox img {
+  max-width: 100%;
+  max-height: calc(100svh - 70px);
+  object-fit: contain;
+  cursor: default;
+}
+
+/* On phones let the image be larger than the screen so details can be panned. */
+@media (max-width: 700px) and (orientation: portrait) {
+  .lightbox {
+    place-items: start;
+  }
+
+  .lightbox img {
+    max-width: none;
+    max-height: none;
+    height: calc(100svh - 70px);
+    width: auto;
+  }
+}
+
+.close {
+  position: fixed;
+  top: 18px;
+  right: 18px;
+  width: 52px;
+  height: 52px;
+  border: 0;
+  border-radius: 50%;
+  background: var(--crimson);
+  color: var(--bg);
+  font-size: 30px;
+  line-height: 1;
+  cursor: pointer;
+  z-index: 1;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+}

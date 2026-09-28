@@ -1,0 +1,68 @@
+.thanks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 70svh;
+  text-align: center;
+}
+
+.title {
+  font-family: var(--font-flourish), cursive;
+  font-weight: 400;
+  font-size: clamp(88px, 27vw, 180px);
+  line-height: 1.3;
+  color: var(--brown);
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px 28px;
+  margin-top: 28px;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+}
+
+.links a {
+  color: var(--brown);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.links a:hover {
+  border-color: currentColor;
+}
+
+.copy {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  color: #9a8c80;
+}
+
+@media (min-width: 1100px) {
+  .thanks {
+    min-height: 0;
+  }
+
+  .title {
+    font-size: calc(119 * var(--flourish-scale) * var(--pt));
+    line-height: calc(336 * var(--pt));
+  }
+
+  /* Keep the title where it sits in the PDF; contact links go below it. */
+  .links {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: calc(640 * var(--pt));
+    margin: 0;
+    font-size: calc(15 * var(--pt));
+  }
+}

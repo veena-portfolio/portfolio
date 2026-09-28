@@ -1,0 +1,144 @@
+{
+  "images": {
+    "cover": {
+      "src": "/images/cover.jpg",
+      "width": 2880,
+      "height": 1620
+    },
+    "cover-mobile": {
+      "src": "/images/cover-mobile.jpg",
+      "width": 1484,
+      "height": 1022
+    },
+    "profile-photo": {
+      "src": "/images/profile-photo.jpg",
+      "width": 600,
+      "height": 695
+    },
+    "software-icons": {
+      "src": "/images/software-icons.png",
+      "width": 930,
+      "height": 150
+    },
+    "star": {
+      "src": "/images/star.png",
+      "width": 370,
+      "height": 320
+    },
+    "splash": {
+      "src": "/images/splash.png",
+      "width": 320,
+      "height": 1620
+    },
+    "contents-1": {
+      "src": "/images/contents-1.jpg",
+      "width": 612,
+      "height": 911
+    },
+    "contents-2": {
+      "src": "/images/contents-2.jpg",
+      "width": 612,
+      "height": 911
+    },
+    "contents-3": {
+      "src": "/images/contents-3.jpg",
+      "width": 612,
+      "height": 911
+    },
+    "contents-4": {
+      "src": "/images/contents-4.jpg",
+      "width": 612,
+      "height": 911
+    },
+    "flame-moodboard": {
+      "src": "/images/flame-moodboard.jpg",
+      "width": 1710,
+      "height": 1206
+    },
+    "flame-sketches": {
+      "src": "/images/flame-sketches.jpg",
+      "width": 2880,
+      "height": 1620
+    },
+    "flame-lineup": {
+      "src": "/images/flame-lineup.jpg",
+      "width": 1793,
+      "height": 1271
+    },
+    "rhythm-moodboard": {
+      "src": "/images/rhythm-moodboard.jpg",
+      "width": 1737,
+      "height": 1188
+    },
+    "rhythm-sketches": {
+      "src": "/images/rhythm-sketches.jpg",
+      "width": 2880,
+      "height": 1620
+    },
+    "rhythm-lineup": {
+      "src": "/images/rhythm-lineup.jpg",
+      "width": 1735,
+      "height": 1271
+    },
+    "plumage-moodboard": {
+      "src": "/images/plumage-moodboard.jpg",
+      "width": 1737,
+      "height": 1251
+    },
+    "plumage-lineup": {
+      "src": "/images/plumage-lineup.jpg",
+      "width": 1728,
+      "height": 1192
+    },
+    "techpack-illustration": {
+      "src": "/images/techpack-illustration.jpg",
+      "width": 765,
+      "height": 1323
+    },
+    "techpack-detail-1": {
+      "src": "/images/techpack-detail-1.jpg",
+      "width": 327,
+      "height": 216
+    },
+    "techpack-detail-2": {
+      "src": "/images/techpack-detail-2.jpg",
+      "width": 234,
+      "height": 216
+    },
+    "techpack-detail-3": {
+      "src": "/images/techpack-detail-3.jpg",
+      "width": 327,
+      "height": 369
+    },
+    "techpack-detail-4": {
+      "src": "/images/techpack-detail-4.jpg",
+      "width": 267,
+      "height": 441
+    },
+    "techpack-detail-5": {
+      "src": "/images/techpack-detail-5.jpg",
+      "width": 330,
+      "height": 429
+    },
+    "lookbook-1": {
+      "src": "/images/lookbook-1.jpg",
+      "width": 624,
+      "height": 1320
+    },
+    "lookbook-2": {
+      "src": "/images/lookbook-2.jpg",
+      "width": 559,
+      "height": 1555
+    },
+    "lookbook-3": {
+      "src": "/images/lookbook-3.jpg",
+      "width": 554,
+      "height": 1390
+    },
+    "lookbook-4": {
+      "src": "/images/lookbook-4.jpg",
+      "width": 710,
+      "height": 1555
+    }
+  }
+}

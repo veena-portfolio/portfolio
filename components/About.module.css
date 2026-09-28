@@ -1,0 +1,190 @@
+/* ---------- Phones & tablets ---------- */
+.about {
+  display: grid;
+  gap: 36px;
+  padding-top: 96px;
+  overflow: hidden;
+}
+
+.photo {
+  width: min(64vw, 280px);
+  border-radius: 12px;
+}
+
+.name {
+  font-family: var(--font-signature), cursive;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 1.1;
+  color: var(--crimson);
+}
+
+.intro {
+  margin-top: -18px;
+}
+
+.block h3 {
+  margin-bottom: 12px;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  color: var(--crimson);
+}
+
+.entry + .entry {
+  margin-top: 16px;
+}
+
+.project + .project {
+  margin-top: 18px;
+}
+
+.project h4 {
+  display: list-item;
+  margin-left: 18px;
+  font-size: inherit;
+  list-style: disc;
+}
+
+.contact,
+.list {
+  list-style: none;
+}
+
+.contact li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  line-height: 1.9;
+}
+
+.contact a {
+  text-decoration: none;
+}
+
+.contact a:hover {
+  color: var(--crimson);
+}
+
+.icon {
+  flex: none;
+  width: 14px;
+  height: 14px;
+  color: var(--crimson);
+}
+
+.list {
+  line-height: 1.75;
+}
+
+.software {
+  width: min(100%, 310px);
+  margin-left: -3px;
+}
+
+.star {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  bottom: 0;
+  width: 110px;
+  pointer-events: none;
+}
+
+.splash {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  width: 56px;
+  pointer-events: none;
+}
+
+.justify {
+  text-align: left;
+}
+
+@media (min-width: 700px) and (max-width: 1099px) {
+  .about {
+    display: block;
+    columns: 2;
+    column-gap: 48px;
+    padding-right: 90px;
+  }
+
+  .about > * {
+    break-inside: avoid;
+    margin-bottom: 36px;
+  }
+}
+
+/* ---------- Laptop: original slide layout ---------- */
+@media (min-width: 1100px) {
+  .about {
+    display: block;
+    font-size: calc(14 * var(--pt));
+    line-height: calc(16.5 * var(--pt));
+  }
+
+  .photo {
+    border-radius: 0;
+  }
+
+  .intro {
+    margin-top: 0;
+  }
+
+  .name {
+    font-size: calc(42 * var(--signature-scale) * var(--pt));
+    line-height: calc(64 * var(--pt));
+  }
+
+  .block h3 {
+    margin-bottom: calc(12 * var(--pt));
+    font-size: calc(24 * var(--pt));
+    line-height: calc(34 * var(--pt));
+  }
+
+  .entry + .entry {
+    margin-top: calc(16.5 * var(--pt));
+  }
+
+  .project + .project {
+    margin-top: calc(15 * var(--pt));
+  }
+
+  .project h4 {
+    margin-left: calc(24 * var(--pt));
+  }
+
+  .contact li {
+    gap: calc(10 * var(--pt));
+    line-height: calc(19.5 * var(--pt));
+  }
+
+  .icon {
+    width: calc(13 * var(--pt));
+    height: calc(13 * var(--pt));
+  }
+
+  .list {
+    line-height: calc(19.5 * var(--pt));
+  }
+
+  .software {
+    width: calc(310 * var(--pt));
+    margin-left: calc(-3 * var(--pt));
+  }
+
+  .star,
+  .splash {
+    position: absolute;
+    bottom: auto;
+    right: auto;
+  }
+
+  .justify {
+    text-align: justify;
+  }
+}

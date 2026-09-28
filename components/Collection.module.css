@@ -1,0 +1,59 @@
+.signature {
+  font-family: var(--font-signature), cursive;
+  font-weight: 400;
+  font-size: clamp(64px, 18vw, 96px);
+  line-height: 1.15;
+  color: var(--accent, var(--crimson));
+}
+
+.flourish {
+  font-family: var(--font-flourish), cursive;
+  font-weight: 400;
+  font-size: clamp(48px, 13vw, 72px);
+  line-height: 1.3;
+  color: var(--crimson);
+}
+
+.description {
+  max-width: 36em;
+  margin: 12px 0 28px;
+  color: var(--accent);
+}
+
+.art {
+  margin-inline: -8px;
+  width: calc(100% + 16px);
+}
+
+.sketches .flourish,
+.lineup .signature {
+  margin-bottom: 20px;
+}
+
+/* ---------- Laptop: original slide layout ---------- */
+@media (min-width: 1100px) {
+  .signature {
+    font-size: calc(48 * var(--signature-scale) * var(--pt));
+    line-height: calc(77 * var(--pt));
+    z-index: 1;
+  }
+
+  .flourish {
+    font-size: calc(36 * var(--flourish-scale) * var(--pt));
+    line-height: calc(100 * var(--pt));
+    z-index: 1;
+  }
+
+  .description {
+    max-width: none;
+    margin: 0;
+    font-size: calc(14 * var(--pt));
+    line-height: calc(16.5 * var(--pt));
+    text-align: center;
+  }
+
+  .sketches .flourish,
+  .lineup .signature {
+    margin: 0;
+  }
+}

@@ -1,0 +1,112 @@
+.title {
+  font-family: var(--font-copperplate), cursive;
+  font-weight: 400;
+  font-size: clamp(84px, 24vw, 150px);
+  line-height: 1.2;
+  color: var(--crimson);
+  text-align: right;
+}
+
+/* Phones & tablets: 2 x 2 grid of the slanted panels. */
+.list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px 0;
+  margin-top: 24px;
+  list-style: none;
+}
+
+@media (min-width: 700px) {
+  .list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.item {
+  position: relative;
+}
+
+.link {
+  display: block;
+  position: relative;
+  color: var(--crimson);
+  text-decoration: none;
+}
+
+/* The four panels share one parallelogram shape, measured from the PDF. */
+.panel {
+  display: block;
+  clip-path: polygon(35% 0, 100% 0, 65% 100%, 0 100%);
+  overflow: hidden;
+}
+
+.panel img {
+  width: 100%;
+  transition:
+    transform 0.8s cubic-bezier(0.2, 0.7, 0.2, 1),
+    filter 0.5s ease;
+}
+
+a.link:hover .panel img,
+a.link:focus-visible .panel img {
+  transform: scale(1.06);
+  filter: contrast(1.1);
+}
+
+.no {
+  position: absolute;
+  top: 0;
+  left: 8.6%;
+  font-family: var(--font-thin), serif;
+  font-weight: 300;
+  font-variant-numeric: lining-nums;
+  font-size: clamp(34px, 10vw, 56px);
+  line-height: 1;
+}
+
+.name {
+  display: block;
+  width: 65%;
+  margin-top: 8px;
+  font-family: var(--font-serif), serif;
+  font-style: italic;
+  font-weight: 800;
+  font-size: clamp(14px, 4vw, 20px);
+  text-align: center;
+  white-space: nowrap;
+}
+
+a.link .name {
+  background: linear-gradient(currentColor, currentColor) no-repeat center bottom / 0 1px;
+  transition: background-size 0.4s ease;
+}
+
+a.link:hover .name {
+  background-size: 60% 1px;
+}
+
+/* ---------- Laptop: original slide layout ---------- */
+@media (min-width: 1100px) {
+  .title {
+    font-size: calc(132 * var(--copperplate-scale) * var(--pt));
+    line-height: calc(176 * var(--pt));
+    text-align: left;
+  }
+
+  .list {
+    display: block;
+    margin: 0;
+  }
+
+  .no {
+    top: calc(-2 * var(--pt));
+    left: calc(24 * var(--pt));
+    font-size: calc(65 * var(--pt));
+  }
+
+  .name {
+    width: calc(180 * var(--pt));
+    margin-top: calc(13 * var(--pt));
+    font-size: calc(24 * 0.9 * var(--pt));
+  }
+}
